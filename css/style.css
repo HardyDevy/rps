@@ -1,0 +1,71 @@
+body {
+  width: 65%;
+  margin: auto;
+  background-color: #EDEDED;
+}
+h1, h2 {
+  text-align: center;
+}
+section {
+  border: 2px solid #333;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #FFF;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.images img {
+  opacity: 50%;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.images img:hover {
+  opacity: 100%;
+}
+section.scoreboard {
+  border-style: dashed;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+@media screen and (max-width: 768px)  {
+  main {grid-template-columns: 1fr;}
+  main img {transform: scale(.9);}
+}
+#result {
+  border-bottom: 2px dotted #AAA;
+  padding-bottom: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pscore, #oscore {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: .25rem;
+}
+p.label {
+  line-height: 1;
+  margin-top: 0;
+}

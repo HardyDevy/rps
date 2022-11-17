@@ -1,7 +1,7 @@
 body {
   width: 65%;
   margin: auto;
-  background-color: #4d4d4d;
+  background-image: linear-gradient(to right,rgb(15,15,15), rgb(55,55,55));
   color: rgb(15, 15, 15);
 }
 h1, h2 {
@@ -48,10 +48,9 @@ section.scoreboard {
   text-align: center;
   border-radius: 0 0 3rem 3rem;
 }
-@media screen and (max-width: 768px)  {
-  main {grid-template-columns: 1fr;}
-  main img {transform: scale(.9);}
-}
+
+
+
 #result {
   padding-bottom: 1rem;
   grid-column-start: 1;
@@ -101,10 +100,19 @@ p.label {
   transition: transform .1s ease 0s;
 }
 #reset:hover {
- background-color: white; 
+ background-color: rgb(18, 18, 18);
+ transform: scale(1.1);
+ transition: transform .1s ease 0s;
 }
 
 #reset:active {
   transform: scale(.9);
+}
+@media screen and (max-width: 768px)  {
+  main {grid-template-columns: 1fr;}
+  main img {transform: scale(.9);}
+  .pchoice {border-radius: 3rem;}
+  .ochoice {border-radius: 3rem;}
+  section.scoreboard {border-radius: 3rem;}
 }
 

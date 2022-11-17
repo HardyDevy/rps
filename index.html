@@ -12,7 +12,7 @@
     <h1>Rock, Paper, Scissors</h1>
     <main class="choice">
       <section class="pchoice">
-        <h2>You choose . . .</h2>
+        <h2>You choose</h2>
         <div class="images">
           <img src="svg/rock.svg" alt="Rock" id="rock" onclick="game('rock')">
           <img src="svg/paper.svg" alt="Paper" id="paper" onclick="game('paper')">
@@ -20,7 +20,7 @@
         </div>
       </section>
       <section class="ochoice">
-        <h2>Opponent chooses . . .</h2>
+        <h2><nobr>Opponent chooses</nobr></h2>
         <div class="opimage">
         <img id="opponentChoice" src="svg/mystery.svg" alt="" >
       </div>
@@ -31,7 +31,7 @@
         <div class="score" id="score">
           <div id="win">
             <h2 id="winLabel">Win:</h2>
-            <p id="winNumber"></p>
+            <p id="winNumber" class="p.text"></p>
           </div>
           <div id="tie">
             <h2 id="tieLabel">Tie:</h2>

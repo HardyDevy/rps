@@ -49,8 +49,6 @@ section.scoreboard {
   border-radius: 0 0 3rem 3rem;
 }
 
-
-
 #result {
   padding-bottom: 1rem;
   grid-column-start: 1;
@@ -115,4 +113,3 @@ p.label {
   .ochoice {border-radius: 3rem;}
   section.scoreboard {border-radius: 3rem;}
 }
-
